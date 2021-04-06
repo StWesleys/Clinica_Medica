@@ -21,9 +21,9 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1024px;
     margin: 0 auto;
 }
+
 
 .top-logo img{
     width: 120px;
@@ -150,6 +150,10 @@ header{
 }
 
 .multiespecialidade a{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
     text-transform: uppercase;
     font-weight: 500;
     margin: 20px 0 30px 0;
@@ -157,6 +161,7 @@ header{
     background-color: rgb(0, 202, 208);
     padding: 10px;
     color: white;
+    width: 101px;
 }
 
 /* CONTATO */
@@ -201,4 +206,135 @@ footer{
 
 .footer p:last-child{
     margin-bottom: 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 425px){
+
+    /*TOPO*/
+
+    .topo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .top-logo{
+        margin: 0 auto;
+        border-bottom: 2px solid rgb(0, 171, 177);
+    }
+
+    .top-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 8px;
+    }
+
+    /*Imagem e Descrição =*/
+    .img{
+        background-image: url(assets/recepcao.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+      
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo-site-descricao {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    /*Sobre*/
+    .sobre-conteudo img{
+        display: none;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    /*Imagem e Descrição =*/
+    .img{
+        background-image: url(assets/recepcao.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+      
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo-site-descricao {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+     /*Sobre*/
+     .sobre-conteudo img{
+        display: none;
+    }
+
+    /*Multiespecilidades*/
+    .multiespecialidade-imagens figure{
+        border: 1px solid none;
+        margin: 30px;
+        box-shadow: 0 0 1em gray;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .img{
+        background-image: url(assets/recepcao.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+      
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+@media(min-width: 1024px){
+    header{
+        background: rgb(0, 202, 209);
+    }
+    
+    .topo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .img{
+        background-image: url(assets/recepcao.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+      
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
 }
