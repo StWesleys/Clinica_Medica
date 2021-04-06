@@ -80,7 +80,7 @@ main{
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
 }
 
 .especialidade p{
@@ -89,4 +89,144 @@ main{
     justify-content: center;
     text-align: center;
     margin-bottom: 20px;
+}
+
+/* Agenda */
+.agenda{
+    display: flex;
+}
+
+.agenda img{
+    height: 200px;
+    width: 30%;
+    object-fit: cover;
+    display: flex;
+}
+
+#foto-fisioterapia{
+    width: 42%;
+}
+
+/*Tabelas*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 31.5vh;
+}
+
+thead{
+    background: rgb(0, 202, 209);
+}
+th{
+    padding: 5px;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+tbody tr:nth-child(2n + 1){
+    background:rgb(205, 205, 205);
+}
+
+
+.contato{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contato h3{
+    margin: 10px;
+}
+
+.contato p{
+    margin: 10px;
+}
+
+footer{
+    margin-top: 40px;
+    background: rgb(12, 110, 113);
+}
+
+.footer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer img{
+    width: 120px;
+    margin: 20px;
+}
+
+.footer p{
+    margin: 5px;
+}
+
+.footer p:last-child{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 319px){
+    .agenda img{
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px){
+        .topo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .top-logo{
+        margin: 0 auto;
+        border-bottom: 2px solid rgb(0, 171, 177);
+    }
+
+    .top-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .agenda img{
+        display: none;
+    }
+
+    table{
+        margin: 10px;
+    }
+
+    td{
+        padding: 5px
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .agenda img{
+        display: none;
+    }
+
+    table{
+        margin: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .agenda img{
+        height: 172px;
+        width: 30%;
+    }
 }
